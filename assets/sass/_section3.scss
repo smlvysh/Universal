@@ -2,7 +2,7 @@
 .section3 {
   margin: 50px 0;
   .box_all {
-    width: 60%;
+    width: 848px;
     height: 245px;
     background-color: white;
     @extend .flex;
@@ -102,6 +102,7 @@ color: #939699;
 
 .section3_all{
     @extend .flex;
+    gap: 30px;
 }
 .recommended{
     border-radius: 10px;
@@ -132,9 +133,11 @@ color: #262d33;
 }
 @media(max-width:1342px){
  .box_all{
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     flex-direction: column;
-    
+    }
+    .box_right{
+        width: 50%;
     }
 .section3_all{
     flex-direction: column;
