@@ -1,5 +1,6 @@
 @use "./mixns" as *;
 @use "./variable" as *;
+@use"./extend" as *;
 
 .showcase {
   background: #262d33;
@@ -28,7 +29,7 @@
     margin-top: 60px;
   }
   &_mountain {
-    background: url(../../img/mountain.png);
+    background: url(../../img/mountains.svg);
     background-size: cover;
     border-radius: 8px 0 0 8px;
     &_item {
@@ -112,7 +113,45 @@
 
 .showcase_recomended {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr;
+  h2{
+    padding: 30px;
+font-weight: 900;
+font-size: 14px; 
+line-height: 1.42857;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #262d33;
+  }
+
+  }
+
+.top1{
+    @extend .top;
+    color: #3bbdc3;
+}
+.top2{
+    @extend .top;
+    color: #6e99ae;
+}
+.top3{
+    @extend .top;
+    color: #ac8ee3;
+}
+.top4{
+    @extend .top;
+    color: #ffa34d;
+}
+.top5{
+    @extend .top;
+    color: #3dc473;
+}
+.text{
+    padding: 0 30px;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.42857;
+color: #4b5157;
 }
 @media (max-width: 1000px) {
     .showcase {
@@ -122,9 +161,5 @@
       }
     }
   }
-  @media (max-width: 600px) {
-    .showcase_recomended {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-      }
-  }
+  
+

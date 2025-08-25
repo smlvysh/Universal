@@ -1,0 +1,199 @@
+@use"_extend.scss" as *;
+.section1{
+    margin: 50px 0;
+}
+.cars{
+    border-radius: 10px;
+background-color: #fff;
+width: 555px;
+height: 370px;
+padding: 0 30px;
+    .cars_top{
+        @extend .flex;
+    
+        h1{
+            font-family: "Roboto Slab", sans-serif;
+font-weight: 700;
+font-size: 25px; 
+line-height: 1.2;
+color: #262d33;
+
+        }
+        .text{
+            padding: 0;
+        }
+        .top2{
+            border-top: none;
+            padding: 10px 0;
+        }
+    }
+     .cars_bottom{
+        @extend .flex;
+        padding: 20px 0;
+        border-top: grey 1px solid;
+    }
+}
+.art{
+    background: url(../../img/art.svg);
+    background-size: cover;
+    width: 263px;
+    height: 370px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    .popular{
+        border-radius: 3px;
+width: 66px;
+height: 25px;
+background: #3dc47e;
+font-weight: 900;
+font-size: 12px;
+text-align: center;
+color: #fff;
+padding: 5px;
+margin-bottom: 130px
+    }
+    .top{
+        @extend .top;
+        color: #e7d9ff;
+        border-top: none;
+        padding: 0;
+    }
+    h1{
+        font-family: "Roboto Slab", sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5625;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+padding: 10px 0;
+    }
+    .art_bottom{
+    @extend .flex;
+    justify-content: start;
+.niz{
+    @extend .flex;
+    gap: 10px;
+    
+    p{
+font-weight: 400;
+font-size: 12px;
+color: #fff;
+opacity: 0.4;
+    }
+    svg{
+        opacity: 0.4;
+    }
+    }
+}
+}
+.sarah_all>p{
+    font-family: "Lato", sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.42857;
+color: #fff;
+opacity: 0.85;
+}
+
+.cat{
+    font-family: "Roboto Slab", sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5625;
+color: #262d33;
+background-color: #fff;
+ width: 263px;
+    height: 370px;
+    border-radius: 15px;
+    h3{
+        font-family: "Roboto Slab", sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5625;
+color: #262d33;
+padding: 10px 30px;
+    }
+    img{
+        border-radius: 15px;
+    }
+}
+
+.text{
+    padding:10px 0;
+}
+.card1{
+    @extend .card;
+}
+.card2{
+   @extend .card;  
+}
+.card3{
+    @extend .card;
+}
+.card4{
+    @extend .card;
+}
+.section1_all{
+    display: grid; 
+    grid-template-areas:
+    "card1 card1 card2"
+    "card3 card4 card5"
+    "card3 card6 card7";
+}
+.cars{
+    grid-area: card1;
+}
+.art{
+    grid-area: card2;
+}
+.cat{
+    grid-area: card3;
+}
+.card1{
+    grid-area: card4;
+}
+.card2{
+    grid-area: card5;
+}
+.card3{
+    grid-area: card6;
+}
+.card4{
+    grid-area: card7;
+}
+@media(max-width:1000px){
+    .section1{
+        margin: 300px 0;
+    }
+}
+@media(max-width:871px){
+    .section1_all{
+grid-template-areas: 
+    
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7";
+}
+}
+@media(max-width:589px){
+    .cars_top{
+        flex-wrap: wrap;
+    }
+    .cars{
+        height: 100%;
+        width: 350px;
+    }
+    .section1_all{
+        gap: 20px;
+    }
+}
+@media(max-width:403px){
+    .section1{
+        margin: 500px;
+    }
+}

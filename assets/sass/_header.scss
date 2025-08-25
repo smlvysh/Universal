@@ -102,6 +102,7 @@
     }
     &_bottom {
       flex-direction: column;
+      
       h2 {
         display: none;
       }
@@ -130,4 +131,7 @@
       }
     }
   }
+}
+.navbar_bottom{
+padding: 30px 0;
 }

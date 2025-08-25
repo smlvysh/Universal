@@ -1,0 +1,22 @@
+.top{
+font-family: "Lato", sans-serif;
+font-weight: 600;
+font-size: 18px;
+line-height: 1.25;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+padding: 10px 30px;
+border-top: 1px solid #4b5157;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+border-radius: 10px;
+background-color: #fff;
+width: 273px;
+height: 170px;
+padding: 20px;}
