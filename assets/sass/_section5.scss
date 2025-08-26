@@ -1,0 +1,41 @@
+@use"./extend" as *;
+.section5{
+   background-color: #fff;
+   padding: 50px 0;
+   .section5_all_all{
+    @extend .flex;
+    flex-direction: column;
+    gap: 30px;
+   }
+    h1{
+        font-family: "Roboto Slab", sans-serif;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.25;
+text-align: center;
+color: #262d33;
+    }
+    .section5_all{
+       @extend .flex;
+       gap: 30px;
+        input{
+           border: 1px solid #d9dadb;
+border-radius: 5px;
+width: 313px;
+height: 40px;
+        }
+        button{
+           border-radius: 20px;
+width: 119px;
+height: 40px;
+background: #4592ff;
+border:gray;
+font-family: "Lato", sans-serif;
+font-weight: 900;
+font-size: 14px;
+line-height: 1.42857;
+text-align: center;
+color: #fff;
+        }
+    }
+}

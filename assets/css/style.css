@@ -202,7 +202,7 @@ body {
   border-top: 1px solid #4b5157;
 }
 
-.flex, .place1 .place1_items, .place1 .place1_items button, .section4 .place2, .section3 .box_all, .section3 .box_all .box_right_top, .section3 .box_all .box_right_bottom, .box_right_top1, .box_right_top2, .box_right_top6, .section3_all, .recommended h2, .recommended_box, .cars .cars_top, .cars .cars_bottom, .art .art_bottom, .art .art_bottom .niz {
+.flex, .section5 .section5_all_all, .section5 .section5_all, .place1 .place1_items, .place1 .place1_items button, .section4 .place2, .section3 .box_all, .section3 .box_all .box_right_top, .section3 .box_all .box_right_bottom, .box_right_top1, .box_right_top2, .box_right_top6, .section3_all, .recommended h2, .recommended_box, .cars .cars_top, .cars .cars_bottom, .art .art_bottom, .art .art_bottom .niz {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -858,6 +858,44 @@ body {
   .places {
     grid-template-areas: "place1" "place2" "place3" "place4";
   }
+}
+.section5 {
+  background-color: #fff;
+  padding: 50px 0;
+}
+.section5 .section5_all_all {
+  flex-direction: column;
+  gap: 30px;
+}
+.section5 h1 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  text-align: center;
+  color: #262d33;
+}
+.section5 .section5_all {
+  gap: 30px;
+}
+.section5 .section5_all input {
+  border: 1px solid #d9dadb;
+  border-radius: 5px;
+  width: 313px;
+  height: 40px;
+}
+.section5 .section5_all button {
+  border-radius: 20px;
+  width: 119px;
+  height: 40px;
+  background: #4592ff;
+  border: gray;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
